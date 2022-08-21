@@ -1,10 +1,33 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="container1">
+      <p class="style1 whiteword fw700">Here's</p>
+      <h1 class="whiteword fw900">JOANNE</h1>
+      <p class="style2 pb40 whiteword fw700">Founder of "XXXD Official"<br>& Graphic Designer</p>
+      <ul data-aos="fade-up" class="flexbox">
+        <li><a href="#"><img src="./assets/images/behance.svg" alt="behancelogo"></a></li>
+        <li><a href="#"><img src="./assets/images/facebook.svg" alt="fblogo"></a></li>
+        <li><a href="#"><img src="./assets/images/instagram.svg" alt="inslogo"></a></li>
+        <li><a href="#"><img src="./assets/images/youtube.svg" alt="youtubelogo"></a></li>
+      </ul> 
+    </div>
+  </div>
+
+  
 <div class="about container2 tac fw700">
   <h2 data-aos="fade-right" class="title">About</h2>
   <img  data-aos="fade-right" src="./assets/images/photo.png" alt="個人照片">
@@ -54,3 +77,23 @@ current: index
   </ul>
 
 </div>
+
+  <div data-aos="fade-right" class="footer">
+    <div class="container4">
+      <h2 class="title whiteword pb16">Contact</h2>
+      <ul>
+        <li class="pb16"><a class="whiteword style2 fw500" href="#">Mail：xxxd@hexschool.com</a></li>
+        <li class="pb64"><a class="whiteword style2 fw500" href="#">Phone Number：0910123456</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+ AOS.init();
+  </script>
+</body>
+
+</html>
